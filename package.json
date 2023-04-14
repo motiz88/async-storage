@@ -106,41 +106,6 @@
       "./example/jest.setup.js"
     ]
   },
-  "detox": {
-    "test-runner": "jest",
-    "runner-config": "example/e2e/config.json",
-    "configurations": {
-      "ios.sim.release": {
-        "binaryPath": "example/ios/build/Build/Products/Release-iphonesimulator/ReactTestApp.app",
-        "type": "ios.simulator",
-        "device": {
-          "type": "iPhone 14"
-        }
-      },
-      "android.emu.release": {
-        "binaryPath": "example/android/app/build/outputs/apk/release/app-release.apk",
-        "testBinaryPath": "example/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk",
-        "type": "android.emulator",
-        "device": {
-          "avdName": "E2E_API_30",
-          "utilBinaryPaths": [
-            "/var/tmp/test-butler.apk"
-          ]
-        }
-      },
-      "android.emu.release.next": {
-        "binaryPath": "example/android/app/build/outputs/apk/next/app-next.apk",
-        "testBinaryPath": "example/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk",
-        "type": "android.emulator",
-        "device": {
-          "avdName": "E2E_API_30",
-          "utilBinaryPaths": [
-            "/var/tmp/test-butler.apk"
-          ]
-        }
-      }
-    }
-  },
   "eslintConfig": {
     "extends": [
       "@react-native-community",
